@@ -1,0 +1,120 @@
+---
+title: "rainbowR"
+image: images/rainbowR-hex-square.png
+title-slide-attributes:
+  data-background-image: images/title-slide.svg
+  data-background-size: contain
+format: 
+  revealjs:
+    theme: custom.scss
+    include-in-header:
+      - meta.html
+      - text: |
+          <link rel = "shortcut icon" href = "images/rainbow-hex-square.png" />
+---
+
+```{r meta}
+#| include: false
+#| eval: false # only run code block locally, don't render 
+library(metathis)
+meta() |> 
+  meta_name("github-repo" = "https://github.com/r-lgbtq/useR-2024") |> 
+  meta_description("Slides for a lightning talk about rainbowR") |> 
+  meta_social(
+    title = "rainbowR: A community that supports, connects and promotes LGBTQ+ people who code in R",
+    url = "https://rainbowr.org/user-2024",
+    #image = "https://rainbowr.org/images/rainbowR-hex-square.png",
+    image = "https://raw.githubusercontent.com/r-lgbtq/useR-2024/main/images/title-slide.png",
+    image_alt = "rainbowR hex sticker",
+    #og_type = "slides",
+    twitter_card_type = "summary_large_image",
+    og_author = c("Ella Kaye", "Hanne Oberman"),
+  ) |> 
+  format() |> 
+  writeLines("meta.html")
+```
+
+```{r qrcodes}
+#| eval: false # just run once
+library(qrcode)
+slides_code <- qr_code("https://rainbowr.org/useR-2024")
+generate_svg(slides_code, "images/slides_qrcode.svg")
+rainbowr_code <- qr_code("https://rainbowr.org")
+generate_svg(rainbowr_code, "images/rainbowr_qrcode.svg")
+```
+
+## {.inverse .center-h .center .larger175}
+
+Our mission is to [support]{.red}, [promote]{.orange} and [connect]{.yellow} [LGBTQ+]{.green} people in the [R community]{.blue} and to spread awareness of LGBTQ+ issues through [data-driven activism]{.pink}
+
+## {.inverse .center .center-h .larger200}
+
+We [exist]{.yellow}
+
+(Some of) what we [do]{.green}
+
+How to [get involved]{.orange}
+
+## {background-image="images/rainbowR-july-meetup.svg" background-size="contain"}
+
+::: {.notes}
+
+TODO: friendly and supportive, people show stuff they've never shown before, it's a safe space.
+
+UTC varies to make it equivalent to 5pm UK time
+
+rainbowR hosts a monthly meet-up for community members to 
+
+- Connect with each other
+- Stay updated on rainbowR developments
+- And to join in an informal 'show and tell', for example to showcase a project or R package they've been working on
+
+The meet-ups are held on the third Wednesday of each month at 4pm UTC.
+
+You can convert this time to your local timezone using the `lubridate` package in R. The next meet-up, on July 24th at 4pm UTC, will take place at 6pm here in Salzburg.
+:::
+
+## {.center .center-h .center .larger175}
+
+Encourage deeper [connections]{.red} with [randomly]{.blue} assigned [buddy]{.pink}
+
+![](images/rainbow-buddies.png){fig-align="center"}
+
+::: {.notes}
+- Encourage deeper connections
+- Opt-in via a sign-up form
+- Buddy pairs randomly assigned
+- Introduction emails sent to each pair
+- [**googlesheets4**, **dplyr**, **blastula**]{.black}
+- New round every three(ish) months
+- Next pairs September 1st
+:::
+
+## {.center-h}
+
+![](images/tidyRainbow.svg){fig-align="center"}
+[**github.com/r-lgbtq/tidyrainbow**](https://github.com/r-lgbtq/tidyrainbow){.larger150}
+
+## {background-image="images/queer-data.jpeg" background-size="contain"}
+
+## {.inverse .center .center-h .larger200}
+
+[rainbowr.org/join]{.yellow}
+
+email, Slack, newsletter
+ 
+[tech.lgbt/@rainbowR]{.green}
+
+[hello@rainbowr.org]{.orange}
+
+Lunch and social tomorrow!
+
+::: {.notes}
+#user-2024-salzburg channel
+:::
+
+## {.center-h .inverse}
+
+[rainbowr.org]{.larger250 .yellow}
+
+![](images/rainbowR-hex.svg)
