@@ -7,10 +7,10 @@ title-slide-attributes:
 format: 
   revealjs:
     theme: custom.scss
-    include-in-header:
-      - meta.html
-      - text: |
-          <link rel = "shortcut icon" href = "images/rainbow-hex-square.png" />
+   # include-in-header:
+   #   - meta.html
+   #   - text: |
+   #       <link rel = "shortcut icon" href = "images/rainbow-hex-square.png" />
 ---
 
 ```{r meta}
@@ -18,11 +18,11 @@ format:
 #| eval: false # only run code block locally, don't render 
 library(metathis)
 meta() |> 
-  meta_name("github-repo" = "https://github.com/r-lgbtq/useR-2024") |> 
+  meta_name("github-repo" = "https://github.com/r-lgbtq/posit-conf-2024") |> 
   meta_description("Slides for a lightning talk about rainbowR") |> 
   meta_social(
     title = "rainbowR: A community that supports, connects and promotes LGBTQ+ people who code in R",
-    url = "https://rainbowr.org/user-2024",
+    url = "https://rainbowr.org/posit-conf-2024",
     #image = "https://rainbowr.org/images/rainbowR-hex-square.png",
     image = "https://raw.githubusercontent.com/r-lgbtq/useR-2024/main/images/title-slide.png",
     image_alt = "rainbowR hex sticker",
@@ -43,10 +43,6 @@ rainbowr_code <- qr_code("https://rainbowr.org")
 generate_svg(rainbowr_code, "images/rainbowr_qrcode.svg")
 ```
 
-## {.inverse .center-h .center .larger175}
-
-Our mission is to [support]{.red}, [promote]{.orange} and [connect]{.yellow} [LGBTQ+]{.green} people in the [R community]{.blue} and to spread awareness of LGBTQ+ issues through [data-driven activism]{.pink}
-
 ## {.inverse .center .center-h .larger200}
 
 We [exist]{.yellow}
@@ -55,7 +51,19 @@ We [exist]{.yellow}
 
 How to [get involved]{.orange}
 
-## {background-image="images/rainbowR-july-meetup.svg" background-size="contain"}
+## {.inverse .center-h .center .larger175}
+
+Our mission is to [connect]{.red}, [support]{.orange} and [promote]{.yellow} [LGBTQ+]{.green} people in the [R community]{.blue} and to spread awareness of LGBTQ+ issues through [data-driven activism]{.pink}
+
+## {.inverse .center-h .center .larger250}
+
+[connect]{.red} 
+
+[support]{.orange}
+
+[promote]{.yellow}
+
+## {background-image="images/rainbowR-aug-meetup.svg" background-size="contain"}
 
 ::: {.notes}
 
@@ -90,12 +98,20 @@ Encourage deeper [connections]{.red} with [randomly]{.blue} assigned [buddy]{.pi
 - Next pairs September 1st
 :::
 
+## {.inverse .center-h .center .larger250}
+
+[data-driven activism]{.pink} 
+
 ## {.center-h}
 
 ![](images/tidyRainbow.svg){fig-align="center"}
 [**github.com/r-lgbtq/tidyrainbow**](https://github.com/r-lgbtq/tidyrainbow){.larger150}
 
 ## {background-image="images/queer-data.jpeg" background-size="contain"}
+
+## {.inverse .center-h .center .larger250}
+
+[get involved]{.green}
 
 ## {.inverse .center .center-h .larger200}
 
@@ -107,11 +123,13 @@ email, Slack, newsletter
 
 [hello@rainbowr.org]{.orange}
 
-Lunch and social tomorrow!
+Lunch tomorrow!
 
 ::: {.notes}
-#user-2024-salzburg channel
+#psot-conf-2024-seattle channel
 :::
+
+## {background-image="images/daniel.jpeg" background-size="contain"}
 
 ## {.center-h .inverse}
 
