@@ -7,6 +7,8 @@ title-slide-attributes:
 format: 
   revealjs:
     theme: custom.scss
+    progress: false
+    menu: false
    # include-in-header:
    #   - meta.html
    #   - text: |
@@ -130,6 +132,8 @@ Lunch tomorrow!
 :::
 
 ## {background-image="images/daniel.jpeg" background-size="contain"}
+
+[**Daniel Sjoberg**]{.daniel}
 
 ## {.center-h .inverse}
 
